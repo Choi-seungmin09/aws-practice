@@ -8,7 +8,6 @@
 ## 🛠 사용 기술
 - AWS EC2
 - Amazon Linux
-- Apache
 
 ## 📋 구축 과정
 
