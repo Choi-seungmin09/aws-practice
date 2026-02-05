@@ -12,5 +12,6 @@
 
 ## 기록
 - EC2 서버 구축
+- ec2-webserver/README.md
 - S3 정적 웹 호스팅
 - IAM 사용자 설정
