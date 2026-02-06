@@ -1,32 +1,28 @@
-# EC2 웹서버 구축 프로젝트
+# AWS EC2 웹서버 + 로드밸런서 실습
 
 ## 📌 목표
-- EC2로 웹서버 구축
-- Apache 설치
-- 외부 접속 성공
+- EC2 웹서버 구축
+- ALB 로드밸런서 연결
+- 트래픽 분산 테스트
 
-## 🛠 사용 기술
-- AWS EC2
-- Amazon Linux
+## 🛠 구성
+- EC2 2대
+- Target Group
+- Application Load Balancer
 
-## 📋 구축 과정
+## 📋 실습 단계
 
-1. EC2 인스턴스 생성
-2. 보안그룹 설정 (80, 22 포트)
-3. Apache 설치
-4. 서버 실행
-5. 접속 확인
+### 1️⃣ EC2 접속
+![EC2 SSH](images/ec2-01-ssh.png)
 
-## ❗ 문제 & 해결
+### 2️⃣ 로드밸런서 설정
+![ALB](images/ec2-02-alb.png)
 
-### 접속 안 됨
-- 원인: 80포트 막힘
-- 해결: 보안그룹 수정
+### 3️⃣ 결과 확인
+![Result](images/ec2-03-result.png)
 
-## 📸 결과 화면
-<img width="1919" height="839" alt="image" src="https://github.com/user-attachments/assets/35d90f15-5a23-4a4b-8608-30e9ba275ae3" />
+### 4️⃣ 웹 접속 성공
+![Success](images/ec2-04-success.png)
 
-
-## ✍ 느낀 점
-- 클라우드 구조 이해
-- 서버 개념 학습
+## ✅ 결과
+- 로드밸런서를 통한 트래픽 분산 성공
