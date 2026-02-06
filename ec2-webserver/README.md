@@ -16,7 +16,10 @@
 ![EC2 SSH](images/ec2-01-ssh.png)
 
 ### 2️⃣ 로드밸런서 설정
-![ALB](images/ec2-02-alb.png)
+
+| 설정 화면 1 | 설정 화면 2 |
+|------------|------------|
+| ![ALB 설정1](images/ec2-02-alb-1.png) | ![ALB 설정2](images/ec2-02-alb-2.png) |
 
 ### 3️⃣ 결과 확인
 ![Result](images/ec2-03-result.png)
