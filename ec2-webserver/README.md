@@ -13,7 +13,6 @@
 - Application Load Balancer
 - Target Group
 - Security Group
-- Nginx
 
 ---
 
