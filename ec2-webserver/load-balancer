@@ -1,0 +1,23 @@
+# AWS Load Balancer Practice
+
+## 📌 Objective
+- ALB를 이용한 트래픽 분산 실습
+
+## 🛠 Architecture
+- EC2 x2
+- Target Group
+- ALB
+
+## 📋 Steps
+1. EC2 생성
+2. Target Group 연결
+3. ALB 생성
+4. 테스트
+
+## 📷 Screenshots
+- step1-ec2.png
+- step2-target-group.png
+- step3-alb-setting.png
+
+## ✅ Result
+- 정상 분산 확인 완료
