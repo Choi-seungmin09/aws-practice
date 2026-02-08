@@ -14,7 +14,7 @@
 
 ---
 
-## 📂 버킷 구조
+## 📂 bucket structure
 - index.html
 - soccer.jpg
 
@@ -39,7 +39,7 @@
 - 실제 S3 버킷에는 `images` 폴더가 존재하지 않음
 - S3 정적 웹 호스팅은 객체 경로가 정확히 일치해야 리소스를 로드함
 
-### 해결
+### solution
 - 실제 버킷 구조에 맞게 이미지 경로 수정
 ```html
 <img src="soccer.jpg">
