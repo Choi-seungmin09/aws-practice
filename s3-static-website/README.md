@@ -44,6 +44,8 @@
 ```html
 <img src="soccer.jpg">
 
+---
+
 ### 느낀점
 -S3 Object URL과 Static Website Endpoint의 차이를 이해함
 -정적 웹 환경에서 파일 경로 관리의 중요성을 경험함
