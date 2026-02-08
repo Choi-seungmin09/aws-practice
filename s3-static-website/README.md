@@ -38,7 +38,11 @@ HTML과 이미지 리소스를 S3 객체로 관리하며
 ```html
 <img src="soccer.jpg">
 
+---
+
 ### 결론
+
+![Web](images/s3-website.png)
 
 ### 느낀점
 - S3 Object URL과 Static Website Endpoint의 차이를 이해함
