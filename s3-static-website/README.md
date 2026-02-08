@@ -38,4 +38,9 @@ HTML과 이미지 리소스를 S3 객체로 관리하며
 ```html
 <img src="soccer.jpg">
 
-## 결론
+### 결론
+
+### 느낀점
+- S3 Object URL과 Static Website Endpoint의 차이를 이해함
+- 정적 웹 환경에서 파일 경로 관리의 중요성을 경험함
+- 단순 구성이라도 실제 문제 해결 과정이 중요하다는 것을 느낌
