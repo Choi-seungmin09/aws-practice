@@ -23,7 +23,7 @@
 ## 📋 결과 화면
 > S3 Static Website Endpoint를 통해 접속한 결과 화면
 
-![](images.s3-website.png)
+![](images/s3-website.png)
 
 ---
 
@@ -43,3 +43,8 @@
 - 실제 버킷 구조에 맞게 이미지 경로 수정
 ```html
 <img src="soccer.jpg">
+
+### 느낀점
+-S3 Object URL과 Static Website Endpoint의 차이를 이해함
+-정적 웹 환경에서 파일 경로 관리의 중요성을 경험함
+-단순 구성이라도 문제 해결 과정이 중요하다는 것을 느낌
