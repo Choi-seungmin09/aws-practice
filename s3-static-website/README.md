@@ -23,7 +23,7 @@
 ## 📋 결과 화면
 > S3 Static Website Endpoint를 통해 접속한 결과 화면
 
-![S3 Static Website](s3-website.png)
+![](images.s3-website.png)
 
 ---
 
