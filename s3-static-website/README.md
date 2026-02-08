@@ -42,7 +42,8 @@
 ### 해결
 - 실제 버킷 구조에 맞게 이미지 경로 수정
 ```html
-<img src="soccer.jpg">```
+<img src="soccer.jpg">
+```
 
 ---
 
