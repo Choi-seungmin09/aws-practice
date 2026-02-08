@@ -1,10 +1,10 @@
-# AWS S3 Static Website 
+# AWS S3 정적 웹사이트 구축 실습
 
-## 📌 프로젝트 개요
-Amazon S3의 Static Website Hosting 기능을 이용해  
-단일 페이지 웹 사이트를 구축한 실습 프로젝트입니다.  
-HTML과 이미지 리소스를 S3 객체로 관리하며  
-정적 웹 호스팅 동작 원리를 이해하는 것을 목표로 했습니다.
+## 📌 프로젝트 목표
+- Amazon S3 정적 웹 호스팅 구성
+- 단일 페이지 웹 사이트 배포
+- HTML 및 이미지 객체 관리
+- 정적 웹 호스팅 동작 방식 이해
 
 ---
 
@@ -15,16 +15,47 @@ HTML과 이미지 리소스를 S3 객체로 관리하며
 
 ---
 
-## 📂 버킷 구조
-- index.html
-- soccer.jpg
+## 📋 실습 과정
 
-- ---
+### 1️⃣ S3 버킷 생성
+정적 웹 호스팅을 위한 S3 버킷 생성
+
+![S3 Bucket](images/s3-01-bucket.png)
+
+---
+
+### 2️⃣ 정적 웹 호스팅 활성화
+Index document 설정 및 Static Website Hosting 활성화
+
+![Static Website Hosting](images/s3-02-static-hosting.png)
+
+---
+
+### 3️⃣ HTML 파일 업로드
+단일 페이지 웹 사이트를 위한 `index.html` 업로드
+
+![Index Upload](images/s3-03-index.png)
+
+---
+
+### 4️⃣ 이미지 파일 업로드
+웹 페이지에서 사용할 이미지 객체 업로드
+
+![Image Upload](images/s3-04-image.png)
+
+---
+
+### 5️⃣ 웹 사이트 접속 확인
+S3 Static Website Endpoint를 통해 페이지 정상 출력 확인
+
+![S3 Website](s3-website.png)
+
+---
 
 ## ❗ 트러블슈팅
 
 ### 문제
-- `index.html`은 정상적으로 출력됨
+- HTML 페이지는 정상 출력
 - `<img>` 태그에 이미지가 표시되지 않음
 - 이미지 Object URL 직접 접근 및 다운로드는 가능
 
@@ -37,14 +68,3 @@ HTML과 이미지 리소스를 S3 객체로 관리하며
 - 실제 버킷 구조에 맞게 이미지 경로 수정
 ```html
 <img src="soccer.jpg">
-
----
-
-### 결론
-
-![Web](images/s3-website.png)
-
-### 느낀점
-- S3 Object URL과 Static Website Endpoint의 차이를 이해함
-- 정적 웹 환경에서 파일 경로 관리의 중요성을 경험함
-- 단순 구성이라도 실제 문제 해결 과정이 중요하다는 것을 느낌
