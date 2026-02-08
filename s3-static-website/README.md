@@ -1,17 +1,41 @@
-# S3 Static Website Hosting (One Page)
+# AWS S3 Static Website 
 
-## 개요
-- Amazon S3를 이용한 단일 페이지 정적 웹 사이트 호스팅
-- HTML + 이미지 리소스 구성
+## 📌 프로젝트 개요
+Amazon S3의 Static Website Hosting 기능을 이용해  
+단일 페이지 웹 사이트를 구축한 실습 프로젝트입니다.  
+HTML과 이미지 리소스를 S3 객체로 관리하며  
+정적 웹 호스팅 동작 원리를 이해하는 것을 목표로 했습니다.
 
-## 사용 기술
-- AWS S3
+---
+
+## 🛠 사용 기술
+- AWS S3 (Static Website Hosting)
 - HTML / CSS
+- AWS Console
 
-## 트러블슈팅
-- 이미지 미출력 이슈 발생
-- 원인: S3 객체 경로와 HTML 상대경로 불일치
-- 해결: 실제 버킷 구조에 맞게 이미지 경로 수정
+---
 
-## 결과
-- S3 Static Website Endpoint에서 정상 동작 확인
+## 📂 버킷 구조
+- index.html
+- soccer.jpg
+
+- ---
+
+## ❗ 트러블슈팅
+
+### 문제
+- `index.html`은 정상적으로 출력됨
+- `<img>` 태그에 이미지가 표시되지 않음
+- 이미지 Object URL 직접 접근 및 다운로드는 가능
+
+### 원인
+- HTML에서 이미지 경로를 `images/soccer.jpg`로 지정
+- 실제 S3 버킷에는 `images` 폴더가 존재하지 않음
+- S3 정적 웹 호스팅은 객체 경로가 정확히 일치해야 리소스 로드 가능
+
+### 해결
+- 실제 버킷 구조에 맞게 이미지 경로 수정
+```html
+<img src="soccer.jpg">
+
+## 결론
